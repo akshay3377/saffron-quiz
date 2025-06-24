@@ -22,7 +22,7 @@ export default function SummaryScreen({ score, total, onRetry, passmark }: Props
         onClick={onRetry}
         className="bg-indigo-600 text-white px-5 py-2.5 rounded-lg shadow hover:bg-indigo-700 transition"
       >
-        🔁 Retry Quiz
+         Retry Quiz
       </button>
     </div>
   );

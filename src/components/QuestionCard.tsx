@@ -33,7 +33,7 @@ export default function QuestionCard({
               onClick={() => onAnswer(option.label, option.isCorrect)}
               className={`flex items-center gap-3  border-2 border-blue-500 w-full text-left  px-5 py-3 rounded-xl shadow-xl shadow-[rgba(0,0,0,0.16)_0px_1px_4px] transition duration-200 ${
                 isSelected
-                  ? "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white  shadow-md"
+                  ? "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-800 text-white  shadow-md"
                   : "bg-transparent   text-white"
               }`}
             >
