@@ -6,6 +6,7 @@ import SummaryScreen from "./components/SummaryScreen";
 import type { Question, QuizData } from "./types";
 import BackButton from "./assets/icons/BackButton";
 import ProgressBar from "./components/ProgressBar";
+import "./App.css";
 
 interface UserAnswer {
   selectedLabel: string;
@@ -66,9 +67,7 @@ export default function App() {
   const score = userAnswers.filter((ans) => ans?.isCorrect).length;
 
   return (
-    <main className="relative min-h-screen flex items-center justify-center px-4 py-10 font-sans overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/quiz-bg.jpg')] bg-cover bg-center opacity-95 z-0" />
-
+    <main className="main-container">
       {showSummary ? (
         <SummaryScreen
           score={score}
@@ -78,14 +77,12 @@ export default function App() {
         />
       ) : (
         questions.length > 0 && (
-          <div className="w-full max-w-2xl p-4 sm:p-6 absolute inset-0 md:static md:inset-auto bg-gradient-to-tr from-blue-800 via-slate-800 to-blue-900 shadow-lg rounded-lg space-y-6 transition-all duration-300 animate-fade-in">
-            <div className=" text-gray-500">
+          <div className="quiz-box fade-in">
+            <div>
               <button
                 disabled={currentIndex === 0}
                 onClick={handleBack}
-                className={`px-2 py-2 text-sm mb-4 w-fit rounded-lg transition text-white ${
-                  currentIndex === 0 ? "  cursor-not-allowed" : ""
-                }`}
+                className="back-button"
               >
                 <BackButton className="text-white" />
               </button>

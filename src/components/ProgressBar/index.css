@@ -1,0 +1,46 @@
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.progress-bar-wrapper {
+  position: relative;
+  width: 100%;
+  height: 2rem; /* cleaner size */
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899); 
+}
+
+.progress-label {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 1px dashed #6b7280;
+  padding-bottom: 1.25rem;
+}
+
+.progress-label-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #d1d5db; 
+}
+
+.progress-label-text strong {
+  font-weight: 700;
+}
+
+.progress-label-text small {
+  font-size: 0.875rem;
+  color: #9ca3af; 
+}
