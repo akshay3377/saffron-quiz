@@ -84,7 +84,7 @@ export default function App() {
         />
       ) : (
         questions.length > 0 && (
-          <div className="w-full max-w-2xl p-4 sm:p-6 absolute inset-0 md:static md:inset-auto bg-gradient-to-t from-pink-200 to-white  shadow-lg rounded-lg space-y-6 transition-all duration-300 animate-fade-in">
+          <div className="w-full max-w-2xl p-4 sm:p-6 absolute inset-0 md:static md:inset-auto bg-gradient-to-t from-blue-200 to-gray-100  shadow-lg rounded-lg space-y-6 transition-all duration-300 animate-fade-in">
             <div className="  mb-8 text-gray-500">
               <button
                 disabled={currentIndex === 0}

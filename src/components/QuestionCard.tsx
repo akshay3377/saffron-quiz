@@ -18,7 +18,7 @@ export default function QuestionCard({
 }: Props) {
   return (
     <div className="">
-      <h2 className="text-2xl mb-10 font-semibold leading-tight text-gray-900">
+      <h2 className="text-xl mb-8 mt-[90px]  md:mt-[0px]  font-semibold leading-tight text-gray-800">
         {question.question}
       </h2>
 
@@ -45,7 +45,7 @@ export default function QuestionCard({
                 {optionLetter}
               </span>
 
-              <span className="flex-1 font-semibold">{option.label}</span>
+              <span className="flex-1 font-medium">{option.label}</span>
             </button>
           );
         })}
