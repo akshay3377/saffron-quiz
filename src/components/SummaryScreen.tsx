@@ -10,7 +10,7 @@ export default function SummaryScreen({ score, total, onRetry, passmark }: Props
   const passed = percentage >= passmark;
 
   return (
-    <div className="w-full max-w-md p-6 bg-white rounded-3xl shadow-xl text-center space-y-5 animate-fade-in">
+    <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-xl text-center space-y-5 animate-fade-in">
       <h2 className="text-3xl font-bold text-indigo-700">Quiz Completed</h2>
       <p className="text-xl font-semibold">
         Score: {score} / {total}

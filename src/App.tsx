@@ -84,7 +84,7 @@ export default function App() {
         />
       ) : (
         questions.length > 0 && (
-          <div className="w-full max-w-2xl p-4 sm:p-6 bg-blue-400/60  shadow-lg rounded-lg space-y-6 transition-all duration-300 animate-fade-in">
+          <div className="w-full max-w-2xl p-4 sm:p-6 absolute inset-0 md:static md:inset-auto bg-gradient-to-t from-pink-200 to-white  shadow-lg rounded-lg space-y-6 transition-all duration-300 animate-fade-in">
             <div className="  mb-8 text-gray-500">
               <button
                 disabled={currentIndex === 0}
@@ -98,10 +98,10 @@ export default function App() {
                 <BackButton className="text-white" />
               </button>
 
-              <div className="w-full bg-white flex items-center mx-auto max-w-sm justify-between gap-4 py-2 px-3 rounded-2xl shadow-lg ">
+              <div className="w-full bg-white flex items-center mx-auto max-w-sm mb-10 justify-between gap-4 py-2 px-3 rounded-2xl shadow-lg ">
                 <div className="relative flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
                   <div
-                    className="absolute left-0 top-0 h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500  transition-all duration-300"
+                    className="absolute left-0 top-0 h-full bg-blue-500  transition-all duration-300"
                     style={{
                       width: `${
                         ((currentIndex + 1) / questions.length) * 100

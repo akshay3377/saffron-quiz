@@ -18,7 +18,7 @@ export default function QuestionCard({
 }: Props) {
   return (
     <div className="">
-      <h2 className="text-xl sm:text-2xl mb-8 font-semibold leading-tight text-white">
+      <h2 className="text-2xl mb-10 font-semibold leading-tight text-gray-900">
         {question.question}
       </h2>
 
