@@ -1,7 +1,4 @@
-
-
-
-const BackButton = (props : any) => (
+const BackButton = (props: any) => (
   <svg
     width="20px"
     height="20px"
