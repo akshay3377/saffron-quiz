@@ -10,17 +10,19 @@ export default function SummaryScreen({ score, total, onRetry, passmark }: Props
   const passed = percentage >= passmark;
 
   return (
-    <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-xl mx-auto text-center animate-fade-in">
-      <h2 className="text-2xl font-bold mb-2">Quiz Completed</h2>
-      <p className="text-lg mb-1">Score: {score} / {total}</p>
-      <p className={`font-semibold mb-4 ${passed ? "text-green-600" : "text-red-600"}`}>
-        {passed ? "You passed!" : "Try again to improve your score."}
+    <div className="w-full max-w-md p-6 bg-white rounded-3xl shadow-xl text-center space-y-5 animate-fade-in">
+      <h2 className="text-3xl font-bold text-indigo-700">Quiz Completed</h2>
+      <p className="text-xl font-semibold">
+        Score: {score} / {total}
+      </p>
+      <p className={`text-lg ${passed ? "text-green-600" : "text-red-500"}`}>
+        {passed ? "🎉 You passed!" : "Try again to improve your score."}
       </p>
       <button
         onClick={onRetry}
-        className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition"
+        className="bg-indigo-600 text-white px-5 py-2.5 rounded-lg shadow hover:bg-indigo-700 transition"
       >
-        Retry Quiz
+        🔁 Retry Quiz
       </button>
     </div>
   );
