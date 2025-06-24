@@ -78,15 +78,13 @@ export default function App() {
         />
       ) : (
         questions.length > 0 && (
-          <div className="w-full max-w-2xl p-4 sm:p-6 absolute inset-0 md:static md:inset-auto bg-gradient-to-t from-blue-200 to-gray-100 shadow-lg rounded-lg space-y-6 transition-all duration-300 animate-fade-in">
-            <div className="mb-8 text-gray-500">
+          <div className="w-full max-w-2xl p-4 sm:p-6 absolute inset-0 md:static md:inset-auto bg-gradient-to-tr from-blue-800 via-slate-800 to-blue-900 shadow-lg rounded-lg space-y-6 transition-all duration-300 animate-fade-in">
+            <div className=" text-gray-500">
               <button
                 disabled={currentIndex === 0}
                 onClick={handleBack}
-                className={`px-2 py-2 text-sm mb-4 w-fit rounded-lg transition ${
-                  currentIndex === 0
-                    ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-                    : "bg-indigo-100 hover:bg-indigo-200 text-indigo-700"
+                className={`px-2 py-2 text-sm mb-4 w-fit rounded-lg transition text-white ${
+                  currentIndex === 0 ? "  cursor-not-allowed" : ""
                 }`}
               >
                 <BackButton className="text-white" />
